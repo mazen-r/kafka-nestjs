@@ -14,7 +14,7 @@ export class AppController implements OnModuleInit {
     }  
 
   onModuleInit() {
-    throw new Error('Method not implemented.');
+    this.authClient.subscribeToResponseOf('get_user');
   }
 
 }
